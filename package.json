@@ -1,0 +1,21 @@
+{
+  "name": "discord-baby-monitor",
+  "version": "1.0.0",
+  "description": "A project to test the feasibility of running a Discord bot on a Raspberry Pi that pipes microphone audio into a voice channel.",
+  "main": "babymonitor.js",
+  "scripts": {
+    "start": "nodemon babymonitor.js",
+    "start:prod": "node babymonitor.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "dotenv": "^8.0.0",
+    "node-opus": "^0.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
