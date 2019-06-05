@@ -4,13 +4,17 @@ A weekend project to test the feasibility of running a **Discord bot** on a **Ra
 
 Conclusion: it works!
 
+![RPi 2 Model B and Snowball Mic](./setup.jpg)
+<br>
+<sub>(Lugia best birb?)</sub>
+
+This bot has been tested to work on a **Raspberry Pi 2 Model B** running the latest **Raspbian Stretch Lite** (Build 2019-04-08). There's nothing obviously hardware-specific about this build, so it might even work on a Raspberry Pi Zero! I'm sure this setup would work adequately on an RPi 3, too.
+
 ![](./streaming.png)
 <br>
 <sub>The green ring indicates a live mic from the bot!</sub>
 
-This bot has been tested to work on both a **Raspberry Pi 2 Model B** running **Raspbian Stretch Lite** (Build 2019-04-08).
-
-> NOTE: I initially developed this setup on a **2018 Macbook Pro** running **macOS Mojave** (10.14.5), and so there's a bit of platform-specific code in `getDefaultMicrophoneStream()` in **helpers/microphone.js**. That said, the instructions below should work for both use cases with minimal modification. I'll try to be clear when a particular platform requires special consideration.
+I initially wrote this bot on a **2018 Macbook Pro** running **macOS Mojave** (10.14.5), and so there's a bit of platform-specific code in `getDefaultMicrophoneStream()` in **helpers/microphone.js**. That said, the instructions below should work for both use cases with minimal modification. I'll try to be clear when a particular platform requires special consideration.
 
 The bot is written in JavaScript using the latest stable release (v11.5.1) of the [Discord.js API library](https://github.com/discordjs/discord.js).
 
